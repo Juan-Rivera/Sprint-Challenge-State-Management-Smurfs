@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { SmurfContext } from '../contexts/SmurfContext';
 
 const SmurfDisplay = () => {
-
+    const { smurf } = useContext(SmurfContext)
+    console.log(smurf)
    return(
        <div>
-           Smurf Display Component!
+           
        </div>
    ) 
 }
