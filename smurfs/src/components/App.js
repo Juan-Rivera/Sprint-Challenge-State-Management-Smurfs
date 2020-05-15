@@ -4,6 +4,7 @@ import "./App.css";
 import { SmurfContext } from '../contexts/SmurfContext';
 
 import SmurfDisplay from './SmurfDisplay';
+import SmurfForm from "./SmurfForm";
 
 const url = 'http://localhost:3333/smurfs';
 function App() {
@@ -19,6 +20,7 @@ function App() {
     return (
       <div className="App">
         <SmurfContext.Provider value={{ smurf }}>
+          <SmurfForm />
           <SmurfDisplay />
         </SmurfContext.Provider>
       </div>
